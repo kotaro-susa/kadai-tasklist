@@ -1,9 +1,0 @@
-<h1>id: <%= @tasklist2.id %>のタスク詳細ページ</h1>
-
-
-<p>【状態】:<%= @tasklist2.status %></p>
-<p>【タスク】:<%= @tasklist2.content %></p>
-
-<%= link_to "タスク一覧に戻る",tasklist2s_path %>
-<%= link_to "このメッセージを編集する",edit_tasklist2_path(@tasklist2) %>
-<%= link_to "このメッセージを削除する",@tasklist2,method: :delete,data: {confirm: '本当に削除してよろしいですか？'} %>
