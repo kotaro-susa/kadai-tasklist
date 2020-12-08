@@ -2,7 +2,7 @@
 
 <ul>
   <% @tasklist2s.each do |tasklist| %>
-    <li><%= link_to tasklist.id,tasklist %> : <%= tasklist.content %></li>
+    <li><%= link_to tasklist.id,tasklist %> : 【状態】<%= tasklist.status %> 【タスク】<%= tasklist.content %></li>
     <% end %>
 </ul>
 

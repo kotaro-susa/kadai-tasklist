@@ -50,6 +50,6 @@ class Tasklist2sController < ApplicationController
   private
   
   def tasklist2_params
-    params.require(:tasklist2).permit(:content)
+    params.require(:tasklist2).permit(:content,:status)
   end
 end
